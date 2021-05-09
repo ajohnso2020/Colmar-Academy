@@ -1,0 +1,174 @@
+/* Header Section */
+  .header {
+    top: 0;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 32px;
+    line-height: 64px;
+    top: 0;
+    padding-left: 24px;
+    margin-right: auto;
+  }
+
+  .flex-container{
+    justify-content: space-between;
+    margin-left: auto;
+    padding-right: 24px;
+    font-size: 32px;
+    line-height: 64px;
+    right: 0;
+    gap: 16px;
+  }
+
+  /* Banner Section */
+
+  .banner {
+    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+  }
+  .Start here {
+   margin: auto;
+  }
+
+  banner img {
+     margin: 32px 24px;
+     float: left;
+  }
+
+  .button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    line-height: 50px;
+    padding: 20px, 0px;
+  }
+
+  h1, h2 {
+    margin: auto;
+    width: 300px;
+    padding: 10px 0px;
+  }
+
+  /* Info Section */
+
+  .info { 
+    display: flex;
+    height: 700px;
+  }
+  
+  .info img {
+     width: 60vw;
+     height: 60vh;
+     transform: translate(-50, -50);
+     box-sizing: border-box;
+     max-height: 700px;
+  }
+
+  .info h1 { 
+    font-size: 33px;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .info div {
+    flex: 1;
+  }
+
+  .left {
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .left h1 {
+    padding-bottom: 24px;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    white-space: nowrap; 
+  }
+  
+  .right img {
+     height: 19vh;
+     width: 19vw;
+     left: 0;
+     flex: 1;
+     float: left;
+  }
+
+  .right div {
+     flex: 1 ;
+     padding-top: 40px;
+     padding-right: 15px;
+     padding-left: 15px;
+     box-sizing: border-box;
+  } 
+
+  .right section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    font-size: 13px;
+    padding-left: 5px;
+  }
+
+  .right section h4 {
+    white-space: break-spaces;
+    text-align: left;
+  }
+
+  .right .last-child {
+    background-color: lightgray;
+  }
+
+  /* Courses Section */
+   .courses {
+     display: flex;
+     background-color: lightgray;
+     border: 1px solid dodgerblue;
+     flex-wrap: wrap;
+     height: 700px;
+   }
+
+   .courses h1 {
+     flex-basis: 100%;
+     text-align: center;
+     padding-top: 32px;
+   }
+
+    .courses section {
+      flex: 1 1 25%;
+      border: 1px solid red;
+      text-align: center;
+    }
+   
+    .courses img {
+     width: 100%;
+    }
+ 
+    .courses section div {
+      background-color: white;
+  
+    } 
