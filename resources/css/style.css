@@ -27,7 +27,6 @@
   }
 
   /* Banner Section */
-
   .banner {
     background-color: lightgrey;
     justify-content: center;
@@ -61,7 +60,6 @@
   }
 
   /* Info Section */
-
   .info { 
     display: flex;
     height: 700px;
@@ -198,8 +196,8 @@
       background-color: white;
       height: 19vh;
     } 
-  /* Thesis Section */
 
+  /* Thesis Section */
   .thesis {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -207,7 +205,6 @@
     grid-template-areas: "t t"
     "ls rs";
     height: 700px;
-    border: 1px solid dodgerblue;
   }
   .thesis h1 {
     grid-area: t;
@@ -260,4 +257,29 @@
     text-align: left;
   }
  
-  
+  /* Footer Section */
+  .footer {
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    height: 64px;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 32px;
+    line-height: 64px;
+    padding-left: 24px;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .terms {
+    justify-content: space-between;
+    margin-left: auto;
+    padding-right: 24px;
+    font-size: 16px;
+    line-height: 64px;
+    gap: 16px;
+  }
