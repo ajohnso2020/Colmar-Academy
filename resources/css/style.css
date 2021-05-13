@@ -9,7 +9,7 @@
   }
 
   .logo {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 64px;
     top: 0;
     padding-left: 24px;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     margin-left: auto;
     padding-right: 24px;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 64px;
     right: 0;
     gap: 16px;
@@ -37,7 +37,7 @@
    margin: auto;
   }
 
-  banner img {
+  .banner img {
      margin: 32px 24px;
      float: left;
   }
@@ -96,15 +96,24 @@
 
   .right {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    white-space: normal; 
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "top" "mid" "last" ".";
   }
-  
+
+  .top {
+    grid-area: top;
+  }
+
+  .mid {
+    grid-area: mid;
+  }
+
+  .last {
+    grid-area: last;
+    background-color: lightgray;
+  }
   .right img {
      height: 19vh;
      width: 19vw;
@@ -135,10 +144,6 @@
   .right section h4 {
     white-space: normal;
     text-align: left;
-  }
-
-  .right .last-child {
-    background-color: lightgray;
   }
 
   /* Courses Section */
@@ -229,7 +234,7 @@
    }
 
    .thesis .rs img {
-     width: 14vw;
+     width: 17vw;
    }
 
    .thesis .rs {
@@ -283,3 +288,16 @@
     line-height: 64px;
     gap: 16px;
   }
+
+/* Media Queries Section */
+@media only screen and (max-width: 600px) {
+  .info .left{
+      display: none;
+  }
+    .terms {
+      display: none;
+  }
+   .copyright {
+     text-align: center;
+  }
+}
