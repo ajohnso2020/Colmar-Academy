@@ -25,9 +25,9 @@
     right: 0;
     gap: 16px;
   }
-   .flex-container i {
-     font-size: 0;
-   }
+ .flex-container i {
+   display: none;
+ }
 
   /* Banner Section */
   .banner {
@@ -136,19 +136,22 @@
   } 
 
   .right section {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
     justify-content: left;
     text-align: left;
-    align-items: left;
+    align-items: center;
     font-size: 13px;
     padding-left: 5px;
   }
 
   .right section h4 {
-    white-space: normal;
     text-align: left;
+    white-space: normal;
+  }
+  
+  .right section a{
+    text-align: left;
+    text-decoration: none;
+    display: block;
   }
 
   /* Courses Section */
@@ -296,21 +299,117 @@
 
 /* Media Queries Section */
 @media only screen and (max-width: 600px) {
-    .flex-container, .logo span {
+  .terms {
     display: none;
-  } 
+  }
+ 
+  .copyright {
+   text-align: center;
+   align-items: center;
+   width: 100%;
+ } 
+  .flex-container i {
+    display: inline-block;
+  }
 
-  .info .left {
-      display: none;
+  .flex-container, .logo span {
+    display: none;
+    width: 100%;
   }
-    .terms {
+} 
+  @media only screen and (max-width: 600px) {
+   
+    
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+   }
+
+  .banner img {
+   width: 33vw;
+   height: 33vh;
+
+   }
+  .banner .start here {
+   flex: 1 1 0;
+   margin: 0;
+   padding: 0;
+    }
+  } 
+  @media only screen and (max-width: 600px) {
+    .info .left {
       display: none;
+    }
+   .top {
+     display: grid;
+     grid-template-columns: 2fr;
+     grid-template-rows:  repeat(2, 2fr);
+     grid-template-areas: "it" "tt";
+   }
+   .it {
+    grid-area: it;
+   } 
+   .tt {
+    grid-area: tt;
+   }
+   .mid {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows:  repeat(2, 2fr);
+    grid-template-areas: "im" "tm";
   }
-   .copyright {
-     text-align: center;
+   .im {
+    grid-area: im;
+   }
+  .tm {
+    grid-area: tm;
+   }
+   .last {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows:  repeat(2, 2fr);
+    grid-template-areas: "ib" "tb";
+  }
+   .ib {
+    grid-area: ib;
+   }
+  .tb {
+    grid-area: tb;
+   }
+
+   .info .right img {
+     width: 50vw;
+
+   }
+   .info .right section {
+     text-align: left;
      align-items: center;
-     width: 100%;
+   }
+
+   .info .right h2, h4{
+    text-align: left;
+    margin-left: 0;
+    align-items: center;
+   }
   }
+
+  @media only screen and (max-width: 600px) {
+  .courses {
+    margin-top: 130px;
+  }
+
+    .courses section img, p {
+    display: none;
+  }
+  
+  .courses h3 {
+    background-color: lightgray;
+    display: inline-block;
+    transition: ;
+   
+  }
+   @media only screen and (max-width: 600px) {
     .thesis .rs, .thesis .ls h3, .thesis .ls p
     {
       display: none;
