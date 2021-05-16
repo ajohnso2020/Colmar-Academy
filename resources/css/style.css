@@ -19,7 +19,7 @@
   .flex-container{
     justify-content: space-between;
     margin-left: auto;
-    padding-right: 24px;
+    padding-right: 30px;
     font-size: 24px;
     line-height: 64px;
     right: 0;
@@ -199,7 +199,7 @@
     }
    
     .courses img {
-      height: 19vh;
+      height: 18vh;
       width: 100%;
       margin-bottom: 0;
       display: block;
@@ -207,9 +207,11 @@
  
    .courses section div {
       background-color: white;
-      height: 19vh;
+      height: 18vh;
     } 
-
+   .courses section p {
+     font-size: 13px;
+   }
   /* Thesis Section */
   .thesis {
     display: grid;
