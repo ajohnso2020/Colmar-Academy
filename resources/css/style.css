@@ -9,10 +9,10 @@
   }
 
   .logo {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 64px;
     top: 0;
-    padding: 0px 0px 0px 24px;
+    padding-left: 24px;
     margin-right: auto;
   }
 
@@ -25,8 +25,8 @@
     right: 0;
     gap: 16px;
   }
- .flex-container i {
-   display: none;
+ .flex-container i{
+   visibility: hidden;
  }
 
   /* Banner Section */
@@ -194,8 +194,8 @@
   }   
   
   .courses section {
-      border: 1px solid red;
       text-align: center;
+      margin: 0;
     }
    
     .courses img {
@@ -299,27 +299,14 @@
 
 /* Media Queries Section */
 @media only screen and (max-width: 600px) {
-  .terms {
-    display: none;
-  }
- 
-  .copyright {
-   text-align: center;
-   align-items: center;
-   width: 100%;
- } 
-  .flex-container i {
-    display: inline-block;
-  }
-
   .flex-container, .logo span {
-    display: none;
-    width: 100%;
+    visibility: hidden;
   }
-} 
+  .flex-container i {
+    visibility: visible;
+  }
+}
   @media only screen and (max-width: 600px) {
-   
-    
   .banner {
     display: flex;
     flex-wrap: wrap;
@@ -329,7 +316,6 @@
   .banner img {
    width: 33vw;
    height: 33vh;
-
    }
   .banner .start here {
    flex: 1 1 0;
@@ -380,7 +366,6 @@
 
    .info .right img {
      width: 50vw;
-
    }
    .info .right section {
      text-align: left;
@@ -420,7 +405,8 @@
     background-color: lightgray;
   }
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
-    width: 100%;
+    width: 560px;
+    height: 85px;
     font-size: 30px;
     text-align: left;
   } 
@@ -430,7 +416,7 @@
    align-items: center;
    width: 100%;
  }
-
+  }
 
    @media only screen and (max-width: 600px) {
     .thesis {
@@ -446,9 +432,16 @@
       height: 100%;
       margin: 16px 0px;   
     }
-    
-  
   }
 
-
-
+  @media only screen and (max-width: 600px) {
+  .terms {
+    display: none;
+  }
+ 
+  .copyright {
+   text-align: center;
+   align-items: center;
+   width: 100%;
+ } 
+}
