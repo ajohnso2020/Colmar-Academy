@@ -29,6 +29,10 @@
    visibility: hidden;
  }
 
+ .flex-container img {
+   visibility: hidden;
+ }
+
   /* Banner Section */
   .banner {
     background-color: lightgrey;
@@ -307,7 +311,12 @@
   .flex-container i {
     visibility: visible;
   }
+  .flex-container img {
+    visibility: visible;
+    font-size: 25px;
+  }
 }
+
   @media only screen and (max-width: 600px) {
   .banner {
     display: flex;
