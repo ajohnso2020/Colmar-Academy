@@ -305,8 +305,15 @@
 
 /* Media Queries Section */
 @media only screen and (max-width: 600px) {
+  html, body{
+    margin: 0;
+    padding: 0;
+  }
   .flex-container, .logo span {
     visibility: hidden;
+  }
+  .logo a {
+    line-height: 64px;
   }
   .flex-container i {
     visibility: visible;
@@ -314,6 +321,7 @@
   .flex-container img {
     visibility: visible;
     font-size: 25px;
+    line-height: 64px;
   }
 }
 
