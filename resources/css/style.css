@@ -15,7 +15,7 @@
     padding-left: 24px;
     margin-right: auto;
   }
-
+ 
   .flex-container{
     justify-content: space-between;
     margin-left: auto;
@@ -32,6 +32,12 @@
  .flex-container img {
    visibility: hidden;
  }
+ .flex-container a:hover {
+ background: orange;
+ color: white;
+ }
+
+
 
   /* Banner Section */
   .banner {
@@ -42,12 +48,16 @@
   }
   .Start here {
    margin: auto;
+   text-align: center;
   }
 
   .banner img {
      margin: 32px 24px;
      float: left;
      max-width: 100%;
+  }
+  .button-div {
+    text-align: center;
   }
 
   .button {
@@ -325,6 +335,7 @@
   }
 }
 
+
   @media only screen and (max-width: 600px) {
   .banner {
     display: flex;
@@ -427,7 +438,7 @@
    background-color: white;
    align-items: center;
    font-size: 12px;
-   border: 2px solid transparent;
+   border: 5px solid transparent;
   }
 
   .courses section div {
@@ -439,6 +450,7 @@
     font-size: 30px;
     text-align: left;
   } 
+
   .last {
     background-color: white;
   }
@@ -458,7 +470,7 @@
    @media only screen and (max-width: 600px) {
     .thesis {
       display: block;
-      margin-top: 150px;
+      margin-top: 200px;
       height: auto;
     }
     .thesis h1 {
